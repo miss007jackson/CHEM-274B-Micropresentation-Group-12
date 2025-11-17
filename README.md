@@ -67,7 +67,7 @@ Negative cycle detected! Cannot compute guaranteed lowest-energy path.
 ```
 **Lowest-energy folding pathway:**
 ```
-U -> A -> B -> C -> F, ΔG=-8.50 kcal/mol
+U -> A -> B -> C -> F, ΔG = -8.50 kcal/mol
 ```
 This means a negative cycle exists, preventing a guaranteed minimal path calculation. However, we have the algorithm still report the best path found for visualization purposes. 
 
@@ -91,7 +91,7 @@ U -> F: -4.50 kcal/mol
 
 **Lowest-energy folding pathway:**
 ```
-U -> A -> B -> C -> F, ΔG=-8.50 kcal/mol
+U -> A -> B -> C -> F, ΔG = -8.50 kcal/mol
 ```
 
 *Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue. See "example_graph.png" and "example_lowest_energy_path.png".*
@@ -112,7 +112,7 @@ When running the program with data using a real-life protein (ubiquitin), we get
 **Lowest-energy folding pathway:**  
 
 ```
-1 -> 2 -> 3 -> ... -> 76, ΔG=-37.50 kcal/mol
+1 -> 2 -> 3 -> ... -> 76, ΔG = -37.50 kcal/mol
 ```
 
 *Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue. See "ubiquitin_graph.png" and "ubiquitin_lowest_energy_path.png".*
