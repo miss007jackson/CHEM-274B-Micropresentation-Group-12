@@ -64,9 +64,13 @@ Nodes are shown as light-blue circles.
 When running the program with arbitrary states containing a negative cycle, we get the following:
 ```
 Negative cycle detected! Cannot compute guaranteed lowest-energy path.
-Lowest-energy path from U to F: ['U', 'A', 'B', 'C', 'F'], ΔG=-8.50
 ```
-This means a negative cycle exists, preventing a guaranteed minimal path calculation, but the algorithm still reports the best path found. 
+```
+**Lowest-energy folding pathway:**
+```
+U -> A -> B -> C -> F, ΔG=-8.50
+```
+This means a negative cycle exists, preventing a guaranteed minimal path calculation. However, we have the algorithm still report the best path found for visualization purposes. 
 
 *Graph visualization highlights the negative cycle edges in black.*
 
@@ -88,7 +92,7 @@ U -> F: -4.50 kcal/mol
 
 **Lowest-energy folding pathway:**
 ```
-U -> A -> B -> C -> F
+U -> A -> B -> C -> F, ΔG=-8.50
 ```
 
 *Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue.*
