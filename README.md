@@ -65,7 +65,6 @@ When running the program with arbitrary states containing a negative cycle, we g
 ```
 Negative cycle detected! Cannot compute guaranteed lowest-energy path.
 ```
-```
 **Lowest-energy folding pathway:**
 ```
 U -> A -> B -> C -> F, ΔG=-8.50
