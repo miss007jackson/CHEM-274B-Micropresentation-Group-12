@@ -36,7 +36,7 @@ class ProteinGraph:
         )
 
 
-    # Step 3: Bellman-Ford with correct negative cycle detection
+    # Step 3: Bellman-Ford with negative cycle detection
     def bellman_ford(self, source):
         nodes = list(self.G.nodes)
         distance = {node: float('inf') for node in nodes}
@@ -86,7 +86,7 @@ class ProteinGraph:
         edge_colors = ["red" if w < 0 else "blue"
                        for _, _, w in self.G.edges(data="weight")]
 
-        # Highlight the actual negative cycle edges in black
+        # Highlight the negative cycle edges in black
         _, _, neg_cycle = self.bellman_ford(next(iter(self.G.nodes)))
         neg_cycle_set = set(neg_cycle)
 
@@ -159,7 +159,7 @@ class ProteinGraph:
         plt.savefig(plot_file, dpi=300)
         plt.close()
 
-    # Helper: reconstruct path
+    # Helper function for reconstruct path
     def reconstruct_path(self, predecessor, start, end):
         path = []
         while end is not None:
@@ -169,7 +169,7 @@ class ProteinGraph:
     
 # Step 6: Example usage
 if __name__ == "__main__":
-    # Example 1: Graph with a negative cycle
+    # Example 1: Arbitrary states with a negative cycle
     neg_edges_example = [
         ('U', 'A', -2.0), ('A', 'B', -1.5), ('B', 'C', -3.0), ('C', 'F', -2.0),
         ('B', 'D', 1.0), ('D', 'E', -4.0), ('E', 'F', 2.0),
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     example_n_graph.visualize("example_neg_cycle_graph.png")
     example_n_graph.lowest_energy_path("U", "F", "example_neg_lowest_energy_path.png")
 
-    # Example 2: Graph without a negative cycle
+    # Example 2: Arbitrary states without a negative cycle
     edges_example = [
         ('U', 'A', -2.0), ('A', 'B', -1.5), ('B', 'C', -3.0), ('C', 'F', -2.0),
         ('B', 'D', 1.0), ('D', 'E', -4.0), ('E', 'F', 2.0)
