@@ -171,6 +171,7 @@ class ProteinGraph:
 if __name__ == "__main__":
     # Example 1: Arbitrary states with a negative cycle
     neg_edges_example = [
+        # U is our unfolded state, where F is the final folded state
         ('U', 'A', -2.0), ('A', 'B', -1.5), ('B', 'C', -3.0), ('C', 'F', -2.0),
         ('B', 'D', 1.0), ('D', 'E', -4.0), ('E', 'F', 2.0),
         ('C', 'A', -2.5)  # negative cycle edge
@@ -181,6 +182,7 @@ if __name__ == "__main__":
 
     # Example 2: Arbitrary states without a negative cycle
     edges_example = [
+        # U is our unfolded state, where F is the final folded state
         ('U', 'A', -2.0), ('A', 'B', -1.5), ('B', 'C', -3.0), ('C', 'F', -2.0),
         ('B', 'D', 1.0), ('D', 'E', -4.0), ('E', 'F', 2.0)
     ]

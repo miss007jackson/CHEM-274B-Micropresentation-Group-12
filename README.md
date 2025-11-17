@@ -91,6 +91,7 @@ U -> F: -4.50 kcal/mol
 ```
 U -> A -> B -> C -> F, ΔG = -8.50 kcal/mol
 ```
+ - Note that U is our unfolded state, where F is the final folded state.
 
 *Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue. See "example_graph.png" and "example_lowest_energy_path.png".*
 
