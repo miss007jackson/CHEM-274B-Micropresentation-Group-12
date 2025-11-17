@@ -71,7 +71,7 @@ U -> A -> B -> C -> F, ΔG=-8.50 kcal/mol
 ```
 This means a negative cycle exists, preventing a guaranteed minimal path calculation. However, we have the algorithm still report the best path found for visualization purposes. 
 
-*Graph visualization highlights the negative cycle edges in black.*
+*Graph visualization highlights the negative cycle edges in black. See "example_neg_cycle_graph.png".*
 
 ---
 
@@ -94,7 +94,7 @@ U -> F: -4.50 kcal/mol
 U -> A -> B -> C -> F, ΔG=-8.50 kcal/mol
 ```
 
-*Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue.*
+*Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue. See "example_graph.png" and "example_lowest_energy_path.png".*
 
 ### Example 3: Ubiquitin (PDB ID: 1UBQ)
 When running the program with data using a real-life protein (ubiquitin), we get the following:
@@ -115,7 +115,7 @@ When running the program with data using a real-life protein (ubiquitin), we get
 1 -> 2 -> 3 -> ... -> 76, ΔG=-37.50 kcal/mol
 ```
 
-*Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue.*
+*Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue. See "ubiquitin_graph.png" and "ubiquitin_lowest_energy_path.png".*
 
 ---
 
