@@ -61,7 +61,7 @@ Nodes are shown as light-blue circles.
 ## Example Output
 
 ### Example 1: 6-State Graph With a Negative Cycle
-When running the program with the provided example graph containing a negative cycle, the output includes:
+When running the program with arbitrary states containing a negative cycle, we get the following:
 ```
 Negative cycle detected! Cannot compute guaranteed lowest-energy path.
 Lowest-energy path from U to F: ['U', 'A', 'B', 'C', 'F'], ΔG=-8.50
@@ -73,6 +73,7 @@ This means a negative cycle exists, preventing a guaranteed minimal path calcula
 ---
 
 ### Example 2: 6-State Graph without Negative Cycle
+When running the program with arbitrary states that *do not* include a negative cycle, we get the following:
 
 **Minimum energy distances (ΔG):**
 ```
@@ -93,6 +94,7 @@ U -> A -> B -> C -> F
 *Graph visualization highlights the lowest-energy path in green. Negative ΔG edges appear red; positive ΔG edges appear blue.*
 
 ### Example 3: Ubiquitin (PDB ID: 1UBQ)
+When running the program with data using a real-life protein (ubiquitin), we get the following:
 
 **Minimum energy distances (ΔG):**  
 *(ΔG values are illustrative; actual per-residue ΔG depends on Cα sequential edges)*  
