@@ -150,6 +150,7 @@ When running the program with data using a real-life protein (ubiquitin), we get
 - Berman et al., 2000, *Nucleic Acids Research*, 28, 235–242  
 - Cock et al., 2009, *Bioinformatics*, 25, 1422–1423  
 - Cormen et al., 2009, *Introduction to Algorithms*, MIT Press
+- Vijay-Kumar et al., 1987, Structure of ubiquitin, PDB ID 1UBQ, https://www.rcsb.org/structure/1UBQ
 
 ---
 
